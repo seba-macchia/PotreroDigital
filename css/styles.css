@@ -1,6 +1,8 @@
+.header{
+  text-align: center;
+}
 h1{
   color: brown;
-  text-align: center;
   text-decoration:dashed underline;
 }
 h2,h3{
@@ -8,9 +10,36 @@ h2,h3{
   color: darkblue;
   text-decoration:solid underline;
 }
+.header-nav-ul{
+  font-weight: 600;
+  list-style: none;
+}
+.header-nav-ul-li{
+  margin-left: 20px;
+}
+a{
+  list-style: none;
+  text-decoration: none;}
 p{
   color: darkred;
   text-align: start;
+}
+.main-section{
+  text-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.main-section>p{
+  text-align: center;
+}
+.main-section>audio{
+  margin-bottom: 10px;
+}
+.ingredientes{
+  text-align: center;
+  font-weight: 600;
+  list-style-position: inside;
+
 }
 .ingredientes>li{
   color: blue;
@@ -18,6 +47,7 @@ p{
   text-align: center;
   list-style-position: inside;
 }
+
 .ingredientes-p{
   color: blue;
   text-align: center;
@@ -26,10 +56,15 @@ body{
   background-color: bisque;
   font-family:Arial, Helvetica, sans-serif;
 }
-
+.paso-a-paso{
+  text-align: center;
+  font-weight: 600;
+  list-style-position: inside;
+}
 .paso-a-paso>li{
   color:blueviolet;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 
 img{
@@ -48,4 +83,34 @@ video{
   border-radius: 20px;
   width: max-content;
   height: 300px;
+}
+.whatsapp-section {
+  position: fixed;
+  width: 5%;
+  bottom: 36px;
+  right: 10px;
+}
+
+.whatsapp-logo {
+  height: inherit;
+  width: 60%;
+}
+.section-aside{
+  text-align: center;
+}
+.section-aside>aside{
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.footer-content{
+  background-color:azure;
+}
+.footer-content-social-media{
+  font-size: x-large;
+  text-align: center;
+}
+.footer-content-social-media-a{
+  margin-left: 10px;
 }

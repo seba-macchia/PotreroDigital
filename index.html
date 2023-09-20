@@ -4,13 +4,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="shortcut icon" href="./img/pizza-caprichosa.ico" type="image/x-icon">
     <title>Pizza Italiana</title>
   </head>
   <body>
-    <header><h1>Auténtica Pizza Italiana</h1></header>
+    <header class="header">
+      <h1>Auténtica Pizza Italiana</h1>
+      <nav class="header-nav">
+        <ul class="header-nav-ul">
+          <li class="header-nav-ul-li"><a href="https://www.paulinacocina.net/pasta-frola-receta" target="_blank">Pasta Frola</a></li>
+          <li class="header-nav-ul-li"><a href="https://alicante.com.ar/265-receta-tarta-de-pollo" target="_blank">Tarta de Pollo</a></li>
+          <li class="header-nav-ul-li"><a href="https://www.cucinare.tv/receta/empanadas-jugosas-de-carne/?gclid=CjwKCAjwsKqoBhBPEiwALrrqiGEimI9TGqwXU83gRFQkZCCLaFR3CkdSd8B6t9vim9M0MmA6_Khw-xoCp74QAvD_BwE" target="_blank">Empanadas de Carne</a></li>
+          <li class="header-nav-ul-li"><a href="https://cookpad.com/ar/recetas/16470520-noquis-de-papa-receta-de-paulina-cocina"_blank">Noquis</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
-      <section>
+      <section class="main-section">
         <p>A continuación, un audio de bella ciao!!</p>
         <audio src="./audio/bella_ciao_la_casa_de_papel.m4a" controls></audio>
         <img src="./img/pizza-caprichosa.webp" alt="imagen pizza caprichosa" />
@@ -20,9 +33,9 @@
           preparación..
         </p>
       </section>
-      <section>
+      <section class="ingredientes">
         <h2>Ingredientes para la masa:</h2>
-        <ul class="ingredientes">
+        <ul>
           <li>680 g harina</li>
           <li>485 g agua</li>
           <li>9 g levadura fresca</li>
@@ -33,9 +46,9 @@
         <p class="ingredientes-p">Harina para espolvorear la mesa y aceite para untar las placas</p>
         <img src="./img/ingredientes.webp" alt="imagen de ingredientes" />
       </section>
-      <section>
+      <section class="paso-a-paso">
         <h3>Elaboración paso a paso</h3>
-        <ol class="paso-a-paso">
+        <ol>
           <li>En un recipiente grande pon la levadura desmenuzada.</li>
           <li>Añade el agua de unos 25°C.</li>
           <li>
@@ -172,16 +185,16 @@
           <li>Meto la pizza en el horno.</li>
           <li>Horneo la pizza hasta que sus bordes esten tostados.</li>
           <li>Listo, hora de disfrutarla...</li>
-          <video
+        </ol>
+        <aside><video
             src="./videos/video-pizza.mp4"
             width="450"
             height="300"
-            controls
-          ></video>
-        </ol>
+            controls></video>
+        </aside>
       </section>
-      <section>
-        <iframe
+      <section class="section-aside">
+        <aside><iframe
           width="560"
           height="315"
           src="https://www.youtube.com/embed/h_F1rWLTJmE?si=P1YNTXKhSNy_u445"
@@ -189,8 +202,8 @@
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
-        ></iframe>
-        <iframe
+        ></iframe></aside>
+        <aside><iframe
           src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d95039.7040299025!2d12.482778!3d41.893056!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDHCsDUzJzM1LjAiTiAxMsKwMjgnNTguMCJF!5e0!3m2!1ses!2sar!4v1693664166768!5m2!1ses!2sar"
           width="400"
           height="300"
@@ -198,8 +211,25 @@
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        ></iframe></aside>
+        
+      </section>
+      <section class="whatsapp-section">
+        <a href="https://wa.me/"
+          ><img
+            class="whatsapp-logo"
+            src="./img/WhatsApp.png"
+            alt="Logo de WhatsApp"
+        /></a>
       </section>
     </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-content-social-media">
+          <a class="footer-content-social-media-a" href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+          <a class="footer-content-social-media-a" href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

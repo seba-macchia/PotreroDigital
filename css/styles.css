@@ -173,6 +173,7 @@ video{
   text-align: center;
   align-items: center;
   background-color:cadetblue;
+  padding: 1em;
 }
 .footer>iframe{
   width: 160px;

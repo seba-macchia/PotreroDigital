@@ -1,9 +1,13 @@
-.header{
+/* Estilo para el encabezado */
+.header {
   text-align: center;
   padding: 1em;
   background-color: cadetblue;
+  font-family: 'Open Sans', sans-serif; /* Fuente para el encabezado */
 }
-.header-content{
+
+/* Estilo para el contenido dentro del encabezado */
+.header-content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -11,62 +15,89 @@
   text-align: center;
   align-items: center;
 }
-.header-content>img{
-  width: 200px;
-  height: fit-content;
+
+/* Estilo para las imágenes dentro del contenido del encabezado */
+.header-content > img {
+  width: 150px;
+  height: inherit;
 }
-.header-content-social-media-a{
+
+/* Estilo para los enlaces a redes sociales en el contenido del encabezado */
+.header-content-social-media-a {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
   text-decoration: none;
 }
-.header-content-social-media-a:hover{
+
+/* Estilo para el hover de los enlaces a redes sociales */
+.header-content-social-media-a:hover {
   background-color: inherit;
-  font-size: 30px;
-  
+  font-size: 40px;
 }
-.header-content-social-media-a{
+
+/* Estilo adicional para los enlaces a redes sociales */
+.header-content-social-media-a {
   font-size: x-large;
 }
-.fa-facebook{
+
+/* Estilos para íconos de redes sociales específicos */
+.fa-facebook {
   color: #1877f2;
 }
-.fa-xmark{
+
+.fa-xmark {
   color: black;
 }
-.fa-instagram{
+
+.fa-instagram {
   color: #bc2a8d;
 }
-.fa-youtube{
+
+.fa-youtube {
   color: red;
 }
-h1{
+
+/* Estilos para encabezados h1 y h2/h3 */
+h1 {
   color: brown;
+  font-family: 'Open Sans', sans-serif; /* Fuente para h1 */
 }
-h2,h3{
+
+h2, h3 {
   text-align: center;
   color: darkblue;
-  text-decoration:solid underline;
+  text-decoration: solid underline;
+  font-family: 'Open Sans', sans-serif; /* Fuente para h2 y h3 */
 }
-.header-nav-ul{
+
+/* Estilos para la navegación en el encabezado */
+.header-nav-ul {
   display: flex;
   font-weight: 600;
   list-style: none;
   justify-content: center;
 }
-.header-nav-ul-li{
+
+.header-nav-ul-li {
   margin-left: 20px;
 }
-a{
+
+/* Estilos para los enlaces generales */
+a {
   list-style: none;
-  text-decoration: none;}
-p{
+  text-decoration: none;
+}
+
+/* Estilos para párrafos */
+p {
   color: darkred;
   text-align: start;
 }
-.main-section{
+
+/* Estilos para la sección principal */
+.main-section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -75,76 +106,94 @@ p{
   align-items: center;
   margin-bottom: 10px;
 }
-.main-section>p{
+
+/* Estilos para párrafos dentro de la sección principal */
+.main-section > p {
   text-align: center;
 }
-.main-section>audio{
+
+/* Estilos para elementos de audio en la sección principal */
+.main-section > audio {
   margin-bottom: 10px;
 }
-.ingredientes{
+
+/* Estilos para la lista de ingredientes */
+.ingredientes {
   text-align: center;
   font-weight: 600;
   list-style-position: inside;
-
 }
-.ingredientes>li{
+
+.ingredientes > li {
   color: blue;
   font-weight: 600;
   text-align: center;
   list-style-position: inside;
 }
 
-.ingredientes-p{
+/* Estilos adicionales para párrafos dentro de la sección de ingredientes */
+.ingredientes-p {
   color: blue;
   text-align: center;
 }
-body{
+
+/* Estilos generales del cuerpo */
+body {
   background-color: bisque;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif; /* Fuente para el cuerpo del documento */
 }
-.paso-a-paso{
+
+/* Estilos para la sección de paso a paso */
+.paso-a-paso {
   text-align: center;
   font-weight: 600;
   list-style-position: inside;
 }
-.paso-a-paso>li{
-  color:blueviolet;
+
+.paso-a-paso > li {
+  color: blueviolet;
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-img{
-  width: 500px;
-  height: 350px;
+/* Estilos para imágenes, iframes y videos */
+img {
+  width: 50%;
   border-radius: 20px;
 }
 
-iframe{
+iframe {
   border-radius: 20px;
   width: max-content;
   height: 300px;
 }
 
-video{
+video {
   border-radius: 20px;
   width: max-content;
   height: 300px;
 }
+
+/* Estilos para la sección de WhatsApp flotante */
 .whatsapp-section {
   position: fixed;
   width: 5%;
   bottom: 160px;
   right: 10px;
 }
-.whatsapp-logo{
+
+.whatsapp-logo {
   height: inherit;
   width: 60%;
 }
-.video-aside{
+
+/* Estilos para la sección de videos en la barra lateral */
+.video-aside {
   align-items: center;
   margin-bottom: 10px;
 }
-.video-aside>video{
+
+.video-aside > video {
   margin-bottom: 10px;
   margin-top: 10px;
   margin-left: 10px;
@@ -152,45 +201,107 @@ video{
   border-radius: 20px;
   width: max-content;
 }
-.section-aside{
+
+/* Estilos para la sección de barra lateral */
+.section-aside {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
 }
-.section-aside iframe{
+
+.section-aside iframe {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.footer{
+
+/* Estilos para el pie de página */
+.footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  background-color:cadetblue;
+  background-color: cadetblue;
   padding: 1em;
 }
-.footer>iframe{
+
+/* Estilos para iframes dentro del pie de página */
+.footer > iframe {
   width: 160px;
   height: inherit;
 }
-.footer>p{
+
+/* Estilos para párrafos dentro del pie de página */
+.footer > p {
   color: white;
   text-align: center;
   font-weight: 600;
-  font-size: 15px;
+  font-size: .8em;
   margin-right: 15px;
 }
-.footer-content-social-media{
+
+/* Estilos adicionales para la sección de redes sociales en el pie de página */
+.footer-content-social-media-a{
   font-size: 20px;
   text-align: start;
+  margin-left: 10px;
 }
-.footer-content-social-media>h4{
-  font-size: 15px;
+
+.footer-content-social-media > h4 {
+  font-size: 1em;
+  color: white;
+}
+
+/* Estilos para la sección de contacto */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para el hover del enlace de navegación en el encabezado */
+.header-nav-ul-li:hover{
+  background-color: black;
+}
+.header-nav-ul-li:hover>a{
   color: white;
 }

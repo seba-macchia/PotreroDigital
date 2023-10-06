@@ -1,3 +1,6 @@
+/* Alumno: Macchia Sebastian */
+/* Relice 2 puntos de quiebre y el resto para la version desktop sin media query */
+
 /* Estilo para el encabezado */
 .header {
   text-align: center;
@@ -61,11 +64,13 @@
 
 /* Estilos para encabezados h1 y h2/h3 */
 h1 {
+  font-size: 1em;
   color: brown;
   font-family: 'Open Sans', sans-serif; /* Fuente para h1 */
 }
 
 h2, h3 {
+  font-size: 1em;
   text-align: center;
   color: darkblue;
   text-decoration: solid underline;
@@ -75,13 +80,15 @@ h2, h3 {
 /* Estilos para la navegación en el encabezado */
 .header-nav-ul {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   font-weight: 600;
   list-style: none;
-  justify-content: center;
+  justify-content: space-around
 }
 
 .header-nav-ul-li {
-  margin-left: 20px;
+  font-size: .8em;
 }
 
 /* Estilos para los enlaces generales */
@@ -298,10 +305,83 @@ button:hover {
   background-color: #45a049;
 }
 
+.section-display{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Estilos para el hover del enlace de navegación en el encabezado */
 .header-nav-ul-li:hover{
   background-color: black;
 }
 .header-nav-ul-li:hover>a{
   color: white;
+}
+.section-display{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+@media (max-width: 575px) {
+  .video-aside{
+    display: none;
+  }
+  .footer>iframe{
+    display: none;
+  }
+  .section-aside{
+    display: none;
+  }
+  .header-content>img{
+    display: none;
+  }
+  .main-section>audio,p{
+    display: none;
+  }
+  .main-p{
+    display: block;
+  }
+  main,p,h2,h3{
+    padding: .8em;
+    background-color:darkblue;
+    color:darkorange;
+    font-size: .8em;
+  }
+  .footer{
+    justify-content: center;
+  }
+  .footer-content-social-media{
+    display: flex;
+  }
+  .footer-content-social-media>h4{
+    margin: 0;
+  }
+  .whatsapp-section{
+    display: none;
+  }
+  .section-display{
+    display: none;
+  }
+}
+
+@media (min-width:576px) and (max-width:992px){
+  main,p,h2,h3{
+    background-color: #bc2a8d;
+    color: #fff;
+    font-size: 1em;
+  }
+  .section-display{
+    display: none;
+  }
+  .footer>p{
+    background-color: cadetblue;
+  }
+  .section-display{
+    display: none;
+  }
 }

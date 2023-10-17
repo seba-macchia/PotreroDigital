@@ -34,38 +34,45 @@
   text-decoration: none;
 }
 
-/* Estilo para el hover de los enlaces a redes sociales */
-.header-content-social-media-a:hover {
-  background-color: inherit;
-  font-size: 40px;
+.header-content-social-media-a {
+  /* Estilos predeterminados */
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Estilo adicional para los enlaces a redes sociales */
-.header-content-social-media-a {
-  font-size: x-large;
+.header-content-social-media-a:hover {
+  /* Escala más grande al pasar el mouse */
+  transform: scale(1.5);
 }
+
 
 /* Estilos para íconos de redes sociales específicos */
 .fa-facebook {
   color: #1877f2;
+  font-size: x-large;
 }
 
 .fa-xmark {
   color: black;
+  font-size: x-large;
 }
 
 .fa-instagram {
   color: #bc2a8d;
+  font-size: x-large;
 }
 
 .fa-youtube {
   color: red;
+  font-size: x-large;
 }
 
 /* Estilos para encabezados h1 y h2/h3 */
 h1 {
   font-size: 1em;
-  color: brown;
+  color:#fff;
   font-family: 'Open Sans', sans-serif; /* Fuente para h1 */
 }
 
@@ -89,8 +96,15 @@ h2, h3 {
 
 .header-nav-ul-li {
   font-size: .8em;
-}
 
+}
+.header-nav-ul-li>a{
+  text-decoration: none;
+  list-style: none;
+  font-size: large;
+  color: #fff;
+  margin-left: 5px;
+}
 /* Estilos para los enlaces generales */
 a {
   list-style: none;
@@ -187,6 +201,7 @@ video {
   width: 5%;
   bottom: 160px;
   right: 10px;
+  z-index: 1;
 }
 
 .whatsapp-logo {
@@ -248,13 +263,13 @@ video {
   color: white;
   text-align: center;
   font-weight: 600;
-  font-size: .8em;
+  font-size: 1em;
   margin-right: 15px;
 }
 
 /* Estilos adicionales para la sección de redes sociales en el pie de página */
 .footer-content-social-media-a{
-  font-size: 20px;
+  font-size: 25px;
   text-align: start;
   margin-left: 10px;
 }

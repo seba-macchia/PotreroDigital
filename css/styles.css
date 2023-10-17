@@ -320,12 +320,6 @@ button:hover {
   background-color: #45a049;
 }
 
-.section-display{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Estilos para el hover del enlace de navegación en el encabezado */
 .header-nav-ul-li:hover{
@@ -334,12 +328,16 @@ button:hover {
 .header-nav-ul-li:hover>a{
   color: white;
 }
-.section-display{
+.section-display,.section-display-ferrari{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em;
+  text-align: center;
+}
+.section-display-ferrari{
+  display: none;
 }
 
 @media (max-width: 575px) {
@@ -381,6 +379,9 @@ button:hover {
   }
   .section-display{
     display: none;
+  }
+  .section-display-ferrari{
+    display: block;
   }
 }
 

@@ -381,7 +381,12 @@ button:hover {
     display: none;
   }
   .section-display-ferrari{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
   }
 }
 

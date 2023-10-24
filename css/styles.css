@@ -68,10 +68,37 @@
   color: red;
   font-size: x-large;
 }
-
+/* estilos para el modo */
+.modo{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+/* Estilos para el modo claro y el hover */
+.modo-light {
+  color: black;
+  background-color: #fff;
+}
+.modo-light:hover {
+  color: black;
+  background-color:#ccc;
+}
+/* Estilos para el modo oscuro y el hover */
+.modo-dark {
+  color: #fff;
+  background-color: black;
+}
+.modo-dark:hover {
+  color: black;
+  background-color: #ccc;
+}
 /* Estilos para encabezados h1 y h2/h3 */
 h1 {
-  font-size: 1em;
+  font-size: 2em;
   color:#fff;
   font-family: 'Open Sans', sans-serif; /* Fuente para h1 */
 }
@@ -278,7 +305,17 @@ video {
   font-size: 1em;
   color: white;
 }
-
+.copyRight{
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  font-weight: 600;
+  background-color: #1877f2;
+}
+.copyRight:hover{
+  background-color:blueviolet;
+  color: white;
+}
 /* Estilos para la sección de contacto */
 .container {
   max-width: 600px;
@@ -361,8 +398,6 @@ button:hover {
   }
   main,p,h2,h3{
     padding: .8em;
-    background-color:darkblue;
-    color:darkorange;
     font-size: .8em;
   }
   .footer{
@@ -392,8 +427,7 @@ button:hover {
 
 @media (min-width:576px) and (max-width:992px){
   main,p,h2,h3{
-    background-color: #bc2a8d;
-    color: #fff;
+    padding: .8em;
     font-size: 1em;
   }
   .section-display{
